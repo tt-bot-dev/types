@@ -1,0 +1,20 @@
+{
+  "name": "@tt-bot-dev/types",
+  "version": "1.0.0",
+  "description": "Various typings for tt.bot's structures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://owo.codes/tt.bot/modules/types.git"
+  },
+  "author": "TTtie <me@tttie.cz>",
+  "license": "AGPL-3.0-or-later",
+  "types": "./index.d.ts",
+  "dependencies": {
+    "@types/node": "^14.14.14",
+    "sosamba": "^1.1.2"
+  }
+}
