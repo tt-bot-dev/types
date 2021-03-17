@@ -49,17 +49,18 @@ declare namespace ttBot {
         topGGKey?: string;
         gistKey?: string;
 
-        webserverip?: string;
-        serveStatic: boolean;
-        webserverDisplay: string;
-        httpPort: number;
-        httpsPort?: number;
-        httpsSettings?: HTTPSServerOptions;
-
-        extensionFlagRequest: {
-            id: string;
-            token: string
-        };
+        webserver: {
+            host?: string;
+            serveStatic: boolean;
+            display: string;
+            httpPort: number;
+            httpsPort?: number;
+            httpsSettings?: HTTPSServerOptions;
+            extensionFlagRequest: {
+                id: string;
+                token: string
+            };
+        }
 
         normalDateFormat: Intl.DateTimeFormatOptions;
         tzDateFormat: Intl.DateTimeFormatOptions;
