@@ -52,7 +52,7 @@ declare namespace ttBot {
         webserver: {
             host?: string;
             serveStatic: boolean;
-            display: string;
+            display: string | ((path: string) => string);
             httpPort: number;
             httpsPort?: number;
             httpsSettings?: HTTPSServerOptions;
@@ -64,6 +64,9 @@ declare namespace ttBot {
 
         normalDateFormat: Intl.DateTimeFormatOptions;
         tzDateFormat: Intl.DateTimeFormatOptions;
+
+        homeGuild: string;
+        deployCommandsToHomeGuild: boolean;
     }
 
     /**
