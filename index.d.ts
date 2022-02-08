@@ -37,7 +37,7 @@ declare namespace ttBot {
         ownerID: string | string[];
         prefix: string;
         database: {
-            provider: typeof DBProvider,
+            provider: (client: TTBotClient) => typeof DBProvider,
             options: unknown
         };
         serverLogChannel: string;
