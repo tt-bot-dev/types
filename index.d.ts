@@ -42,7 +42,7 @@ declare namespace ttBot {
         };
         serverLogChannel: string;
         announcementChannelID: string;
-        workerCount: string;
+        workerCount: number;
         encryptionIv: string;
 
         botsGGKey?: string;
@@ -56,10 +56,6 @@ declare namespace ttBot {
             httpPort: number;
             httpsPort?: number;
             httpsSettings?: HTTPSServerOptions;
-            extensionFlagRequest: {
-                id: string;
-                token: string
-            };
         }
 
         normalDateFormat: Intl.DateTimeFormatOptions;
