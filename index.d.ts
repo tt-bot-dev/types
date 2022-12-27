@@ -19,7 +19,7 @@
 
 import type { ServerOptions as HTTPSServerOptions } from "https";
 import type { Client } from "sosamba";
-import type { Member } from "eris";
+import type { Member } from "@projectdysnomia/dysnomia";
 
 /**
  * Typings to support tt.bot's web server
